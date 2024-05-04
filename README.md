@@ -69,5 +69,3 @@ python manage.py runserver
 ## Contributing
 
 Pull requests are welcome! For major changes, please open an issue first to discuss what you would like to change.
-
-This is just a basic example, and you can add more information as needed. You may also want to include information about authentication, error handling, and any other features of your API.
