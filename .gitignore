@@ -1,3 +1,7 @@
+# Django API
 */__pycache__
 *.pyc
 db.sqlite3
+
+# General
+.env
