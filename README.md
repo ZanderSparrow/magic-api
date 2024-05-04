@@ -1,9 +1,6 @@
-Here's a sample README file for your Magic Card API:
+# Magic Gathering API
 
-```
-# Magic Card API
-
-A RESTful API for managing a collection of Magic: The Gathering cards.
+A RESTful API for gathering a collection of Magic: The Gathering cards.
 
 ## Endpoints
 
@@ -34,7 +31,7 @@ Request Body:
 }
 ```
 
-### PUT /cards//
+### PUT /cards/<id>/
 
 Updates the card with the specified ID.
 
@@ -49,7 +46,7 @@ Request Body:
 }
 ```
 
-### DELETE /cards//
+### DELETE /cards/<id>/
 
 Deletes the card with the specified ID.
 
@@ -72,6 +69,5 @@ python manage.py runserver
 ## Contributing
 
 Pull requests are welcome! For major changes, please open an issue first to discuss what you would like to change.
-```
 
 This is just a basic example, and you can add more information as needed. You may also want to include information about authentication, error handling, and any other features of your API.
