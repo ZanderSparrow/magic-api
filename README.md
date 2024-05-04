@@ -31,7 +31,7 @@ Request Body:
 }
 ```
 
-### PUT /cards/<id>/
+### PUT /cards/*id*/
 
 Updates the card with the specified ID.
 
@@ -46,7 +46,7 @@ Request Body:
 }
 ```
 
-### DELETE /cards/<id>/
+### DELETE /cards/*id*/
 
 Deletes the card with the specified ID.
 
