@@ -80,7 +80,7 @@ WSGI_APPLICATION = 'MagicGathering.wsgi.application'
 if not DEBUG:
     DATABASES = {
     'default': dj_database_url.config(        
-        default='postgresql://postgres:postgres@localhost:5432/magic',        
+        default=os.environ.get('DATABASE_URL'),        
         conn_max_age=600
     )}
 else:
