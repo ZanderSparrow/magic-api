@@ -2,8 +2,8 @@ from django.shortcuts import render
 from rest_framework import status
 from rest_framework.response import Response
 from rest_framework.viewsets import ModelViewSet
-from .models import MagicCard
-from .serializers import MagicCardSerializer
+from .models import MagicCard, CardCollection
+from .serializers import MagicCardSerializer, CardCollectionSerializer
 
 class MagicCardViewSet(ModelViewSet):
     queryset = MagicCard.objects.all()
@@ -19,3 +19,7 @@ class MagicCardViewSet(ModelViewSet):
             return MagicCard.objects.filter(mana_cost__contains=colors[0])
         else:
             return MagicCard.objects.all()
+        
+class CardCollectionViewSet(ModelViewSet):
+    queryset = CardCollection.objects.all()
+    serializer_class = CardCollectionSerializer

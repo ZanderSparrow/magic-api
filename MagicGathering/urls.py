@@ -21,6 +21,7 @@ from cards import views
 
 router = routers.DefaultRouter()
 router.register(r'cards', views.MagicCardViewSet, basename='cards')
+router.register(r'collections', views.CardCollectionViewSet, basename='collections')
 
 urlpatterns = [
     path('', include(router.urls)),
